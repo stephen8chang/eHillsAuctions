@@ -1,0 +1,54 @@
+[
+{
+  	"itemName": "bunny", 
+  	"itemDes": "cute animal", 
+	"minPrice": 2.0,
+	"currBid": 0.0,
+	"highestBidPossible": 4.0,
+	"boughtOrNot": 0,
+	"image": "https://storage.googleapis.com/scratchpay-com-assets/images/How%20Much%20Is%20a%20Pet%20Bunny/how_much_is_a_pet_bunny.jpg"
+},
+
+{
+  	"itemName": "car", 
+  	"itemDes": "awesome looking car", 
+	"minPrice": 50.0,
+	"currBid": 0.0,
+	"highestBidPossible": 100.0,
+	"boughtOrNot": 0,
+	"image": "https://media.wired.com/photos/5d09594a62bcb0c9752779d9/125:94/w_1994,h_1500,c_limit/Transpo_G70_TA-518126.jpg"
+	
+},
+
+{
+  	"itemName": "dell xps", 
+  	"itemDes": "sleek computer", 
+	"minPrice": 50.0,
+	"currBid": 0.0,
+	"highestBidPossible": 1000.0,
+	"boughtOrNot": 0,
+	"image": "https://i.dell.com/sites/csimages/Video_Imagery/all/xps_7590_touch.png"
+	
+},
+
+{
+  	"itemName": "water bottle", 
+  	"itemDes": "hydrate yourself!", 
+	"minPrice": 20.0,
+	"currBid": 0.0,
+	"highestBidPossible": 200.0,
+	"boughtOrNot": 0,
+	"image": "https://images-na.ssl-images-amazon.com/images/I/31dVzxe%2BAhL._AC_.jpg"
+	
+},
+
+{
+  	"itemName": "lamp", 
+  	"itemDes": "to help you study at night", 
+	"minPrice": 1.0,
+	"currBid": 0.0,
+	"highestBidPossible": 10.0,
+	"boughtOrNot": 0,
+	"image": "https://images-na.ssl-images-amazon.com/images/I/51vT8t%2B8YqL._AC_SX466_.jpg"
+}
+]
