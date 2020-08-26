@@ -1,6 +1,7 @@
 # eHillsAuctions
 >Java GUI auctioning application that relies on asynchronous communication and multithreading
 
+Please switch to the client and server branches to view the code!
 
 **Features**
 
