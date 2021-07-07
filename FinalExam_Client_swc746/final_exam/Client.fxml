@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="final_exam.ClientController">
+   <bottom>
+      <HBox prefHeight="52.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="bidAmount" promptText="Enter amount...">
+               <HBox.margin>
+                  <Insets left="30.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+            <Button mnemonicParsing="false" onAction="#sendBid" text="Bid" textFill="#0a8e15">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#buyNow" text="Buy Now!" textFill="#0a8e15">
+               <HBox.margin>
+                  <Insets left="20.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <TextField fx:id="validBidFeedback" prefHeight="26.0" prefWidth="237.0" promptText="Is your bid valid?">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <HBox.margin>
+                  <Insets left="15.0" top="10.0" />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </bottom>
+   <top>
+      <VBox prefHeight="70.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="welcomeName" text="Welcome [name]!" textFill="#0a8e15">
+               <VBox.margin>
+                  <Insets left="250.0" />
+               </VBox.margin>
+            </Label>
+            <HBox prefHeight="90.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="dropDown" prefWidth="150.0" promptText="item options..." />
+               </children>
+            </HBox>
+            <TextField fx:id="promptToChooseItem" prefHeight="26.0" prefWidth="100.0" text="^^^ Choose an item above before bidding" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" />
+         </padding>
+      </VBox>
+   </top>
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../OneDrive/Pictures/chill.jpg" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="278.0" prefWidth="201.0">
+               <children>
+                  <Label prefHeight="18.0" prefWidth="263.0" textFill="RED" wrapText="true">
+                     <VBox.margin>
+                        <Insets left="2.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="Perpetua Titling MT Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="itemName" text="Item Name:" />
+                  <TextArea fx:id="itemDesc" prefHeight="33.0" prefWidth="201.0" text="Item Description:" />
+                  <TextField fx:id="minPrice" text="Minimum Price:" />
+                  <TextField fx:id="highestPossible" text="Highest Possible:" />
+                  <Region prefHeight="49.0" prefWidth="201.0" />
+                  <TextField fx:id="currentBid" text="Current Bid -&gt;" />
+                  <TextArea fx:id="itemStatusFlag" prefHeight="200.0" prefWidth="200.0" text="Item Status -&gt;" />
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </center>
+   <left>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#logout" text="Logout     " textFill="RED">
+               <padding>
+                  <Insets left="15.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </Button>
+         </children></VBox>
+   </left>
+   <right>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Your Current Bid" textFill="RED">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <font>
+                  <Font name="Yu Gothic Regular" size="12.0" />
+               </font>
+            </Label>
+            <TextField fx:id="yourCurrentBid" />
+            <Label text="Your Bid History" textFill="#0a8e15">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="bidHistory" prefHeight="200.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </right>
+</BorderPane>
